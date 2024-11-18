@@ -2,7 +2,7 @@ FROM node:latest
 
 WORKDIR /app/medusa
 
-COPY . .
+COPY package.json .
 
 # Install dependencies (Global dependencies and local ones)
 RUN apt-get update \
